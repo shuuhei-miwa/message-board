@@ -5,6 +5,7 @@ class MessagesController < ApplicationController
     @messages = Message.all
   end
 
+
   def create
     @message = Message.new(message_params)
     if @message.save
